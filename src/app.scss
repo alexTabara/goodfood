@@ -1,0 +1,715 @@
+$deepGreen : #BDD500;
+$SlabOneRegular : 'Alfa Slab One';
+$abelRegular: 'Abel';
+$belleza : 'Belleza';
+
+@import "~bootstrap/scss/bootstrap";
+
+
+
+  .wrapper {
+    padding: 0 2%;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 8%;
+    }
+
+  }
+  h1 {font-family: $SlabOneRegular; font-size: 50.41px; }
+  .h1-img {height: 80%; margin: 7px 0 0 40px; }
+  .content__h1 {padding-top: 35px;}
+
+
+  /* Header */
+
+  header {
+    background: #707070;
+    .navbar {
+      height: 87px;
+      background: #707070;
+      padding: 0 !important;
+
+      .navbar__div {
+        font-size: 38.61px;
+        color: #FEF4F2;
+        margin-left: 65px;
+        font-family: $SlabOneRegular;
+        position: relative;
+        .logo2-logo {
+          position: absolute;
+          top: 10px;
+          left: -45px;
+          font-size: 20px;
+        }
+        span {
+          color: $deepGreen;
+        }
+      }
+      .navbar-toggler {
+        width: 103px;
+        height: 75px;
+        background: black;
+        padding: 0 !important;
+        line-height: 0px !important;
+        margin-top: 12px !important;
+        margin-right: 8%;
+        position: relative;
+        .icon {
+          width: 70px !important;
+          height: 15px !important;
+          background: #373737 !important;
+          border-radius: 4px;
+        }
+        .navbar__triangle {
+          width: 0 !important;
+          height: 0 !important;
+          border-left: 10px solid transparent!important;
+          border-right: 10px solid transparent !important;
+          border-top: 10px solid black !important;
+          position: absolute !important;
+          margin-left: 41px !important;
+          margin-top: 42px !important;
+          z-index: 2;
+        }
+      }
+      .collapse {
+        height: 100%;
+        .navbar-nav {
+          height: 100%;
+          .navbar__item {
+            position: relative;
+            display: flex;
+            align-items: center !important;
+            margin-left: 20px;
+            font-family: $abelRegular;
+            .navbar__link {
+              font-size: 19px;
+              color: #FEF4F2 !important;
+            }
+          }
+          .navbar__item:after {
+            content: "";
+            background: white;
+            position: absolute;
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            left: 0;
+          }
+          .navbar__item:hover:after {
+            border-bottom: 4px solid $deepGreen;
+          }
+          .navbar__item:hover .navbar__link {
+            color: $deepGreen !important;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+
+/* Body - main */
+ .main {
+   width: 100% !important;
+   position: relative;
+   .main__photo--salad {
+     width: 100%;
+     padding-top: 0%;
+   }
+   .main__photo--thread{
+     position: absolute;
+     top: 83%;
+     left: 0;
+     background-size: cover;
+     width: 100%;
+   }
+
+     .main__sidebar-text {
+       top: 130px;
+       left: 9.5%;
+       position: absolute;
+       display: block;
+       font-family: $SlabOneRegular;
+
+
+       h4, h3 {
+         background: $deepGreen;
+         width: max-content;
+         margin: 0 !important;
+         padding: 5px;
+         color: #141E00;
+       }
+       h4 {
+         font-size: 14.09px;
+       }
+       h3 {
+         font-size: 26.39px;
+
+       }
+     }
+   .main__schedule {
+     width: 233px;
+     height: 125px;
+     position: absolute;
+     right: 8%;
+     top: 82%;
+     .main__top{
+       display: flex;
+       height: 25px;
+       position: relative;
+       .main__button-left {
+         background: #101500;
+         width: 20.6px;
+         height: 27.7px;
+         right: 79.5%;
+         bottom: 8px;
+         position: absolute;
+       }
+       .main__button-right {
+         background: #101500;
+         width: 20.6px;
+         height: 27.7px;
+         position: absolute;
+         right: 11.4%;
+         bottom: 8px;
+       }
+       .div1 {width: 25px; background: $deepGreen;}
+       .div2 {width: 25px;
+        opacity: 0;
+}
+       .div3 {width: 133px; background: $deepGreen;}
+     }
+   }
+   .main__bottom {
+     height: 135px;
+     background: $deepGreen;
+     text-align: center;
+     padding: 3px;
+     h3 {
+       font-size: 28.65px;
+       font-family: $SlabOneRegular;
+     }
+     div {
+       font-size: 18px;
+     }
+   }
+
+ }
+
+
+/* Body - content */
+
+.content {
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Body - Our Menu */
+
+ .our-menu {
+   background: #83A700;
+   .wrapper {
+     h4 {font-size: 29.1px;
+     font-family: $SlabOneRegular;
+     margin-left: 10px;
+       padding-top: 30px;
+ }
+     .wrapper--container-fluid {
+
+       .row--left {
+         width: 50%;
+         margin-right: 4%;
+
+         .col-sm {
+           padding: 0 !important;
+           p {
+             width: 90%;
+           }
+         }
+       }
+       .row--right {
+         width: 50%;
+         p {
+           width: 90%;
+         }
+       }
+       .price {
+         background: #FFFFFF;
+         border-radius: 38px;
+         height: 38px;
+         width: 38px;
+         text-align: center;
+         padding-top: 5px;
+       }
+       #wrapper-price {
+         background: #243100;
+         color: #FFFFFF;
+       }
+     }
+     .our-menu__button {
+       position: relative;
+       .our-menu__triangle {
+         width: 0 !important;
+         height: 0 !important;
+         border-left: 10px solid transparent!important;
+         border-right: 10px solid transparent !important;
+         border-top: 10px solid #abc353 !important;
+         position: absolute !important;
+         left: 50%;
+       }
+     }
+     .our-menu__box {
+       position: relative;
+       .our-menu__box-div {
+         position: relative;
+         width: 100%;
+       }
+       .our-menu__box-div:before {
+         content: "";
+         width: 100%;
+         height: 1px;
+         position: absolute;
+         top: 50%;
+         background: #9cb933;
+         right: 0;
+       }
+     }
+     .fas {color: #f0f4e0;}
+     #grey {color: #acc454;}
+     .food {
+       font-family: $belleza;
+       font-size: 14px;
+       color: #243100;
+     }
+     .our-menu__button {
+       background: #abc353;
+       color: #ffffff;
+       width: 15%;
+       text-align: center;
+       padding-right: auto;
+     }
+   }
+ }
+
+/* Body - Seat-Rezervation */
+
+.seat-reservation {
+  background: #202020;
+  color: #ffffff;
+  height: 153px;
+  .seat-reservation__row {
+    h1 {
+      padding-top: 20px;
+      text-align: right;
+      padding-left: 21%;
+    }
+  }
+  .seat-reservation__box {
+    width: 310px;
+    height: 75px;
+    background: #bdd500;
+    border-radius: 1px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 12%;
+    padding-top: 15px;
+    h5 {
+      font-size: 21.64px;
+      color: #1e1e1e;
+      margin: 0 !important;
+    }
+    p {
+      font-size: 14px;
+      color: #222222;
+    }
+  }
+  .location {
+  }
+}
+
+/* Body - Map-Location */
+
+.map-location {
+ .map-location__img {
+   width: 100%;
+   background-position: center;
+ }
+
+}
+
+/* Body - Chef */
+
+.chef {
+  background: #e6e4de;
+  .container-fluid {
+    .card {
+      background: #e6e4de;
+      border: transparent !important;
+    }
+    .fa-chevron-left, .fa-chevron-right {
+      width: 25.02px;
+      height: 73px;
+      font-size: 90px;
+      margin: auto 0;
+    }
+  }
+}
+
+/* Body - Reservation */
+
+.reservation {
+  h1 {
+    color: #FFFFFF;
+  }
+  background: black;
+  .reservation--container {
+   max-width: 637px;
+    .reservartion__row {
+      height: 58px;
+      background: #EFEFEF;
+      margin-bottom: 10px;
+      background: black;
+
+     .row__col--left {
+       padding-left: 0;
+     }
+      .row__col--right {
+        padding-right: 0;
+      }
+      .form-control {
+        background: #EFEFEF;
+        border-radius: 4px;
+        color: #2E2E2E;
+        font-size: 23.57px;
+      }
+
+    }
+    .reservation__row--green {
+      font-size: 21.64px;
+      background: #BDD500;
+      height: 58px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .reservartion__row--questions {
+      height: auto!important;
+      .reservartion--row-h4 {
+        font-size: 45.75px;
+      }
+      .reservartion__row--p {
+        font-size: 21.32px;
+      }
+    }
+  }
+}
+
+/* Body - Footer-Widgets */
+
+.footer-widgets {
+  background: #111111;
+  div {
+    color: #444444;
+  }
+  .footer-widgets--row__ul {
+    list-style-type: none;
+    padding: 0;
+    .footer-widgets--row__li {
+      a:hover {
+          background: #BDD500;
+        i {
+          color: black;
+        }
+
+      }
+
+      .row-a {
+        font-size: 20px;
+        font-family: $abelRegular;
+        margin-right: 45px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+        i {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          font-size: 27px;
+          text-align: center;
+          padding-top: 12px;
+          background: white;
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+
+  body {
+    .wrapper {padding: 0 2%;
+      .navbar__div {
+        margin-left: 40px !important;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-color: $deepGreen !important;
+      }
+      .collapse {
+        z-index: 9;
+      }
+    }
+    #display-none {
+      display: none !important;
+    }
+    .container-fluid {
+      padding: 0;
+    }
+    .main {
+      .main__photo--thread{
+        margin-top: -80px !important;
+      }
+      .main__photo--salad {
+        padding: 0;
+        height: 360px !important;
+      }
+      .main__sidebar-text {
+        top: 20px;
+        left: 2%;
+      }
+      .main__schedule {
+        right: 2%;
+        top: 60%;
+      }
+    }
+    .seat-reservation {
+      height: auto !important;
+      h1 {
+        padding-left: 5% !important;
+        width: 100% !important;
+      }
+    }
+  }
+
+
+
+}
+@media only screen and (max-width: 992px) {
+  body {
+
+    /* Header */
+    .navbar__div {
+      margin-left: 40px !important;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      border-color: $deepGreen !important;
+    }
+    .navbar-toggler:focus  {
+      outline:0;
+    }
+
+    .navbar-toggler {
+      margin-right: 3% !important;}
+      outline-offset: unset !important;
+      outline: #ff3d44 !important;
+      outline-color: #a0ff26 !important;
+
+    .collapse {
+      background: $deepGreen;
+      height: auto !important;
+      margin: 0 0.2% !important;
+      .navbar-nav {
+        height: 100% !important;
+        :hover {
+          background: black;
+        }
+        :hover .navbar__link {
+          color: white !important;
+        }
+        .navbar__item {
+          border-bottom: 0.1px solid white;
+          width: 100%;
+          padding-left: 9.5% ;
+          margin: 0 !important;
+          height: 60px;
+          color: black !important;
+
+          .navbar__link {
+            color: black !important;
+          }
+        }
+
+      }
+    }
+    .our-menu {
+      .wrapper {
+        .row--left {
+          width: 100% !important;
+          margin-right: 0 !important;
+        }
+        .row--right {
+          display: none !important;
+        }
+      }
+      .our-menu__button {
+        width: 100% !important;
+        margin: 10px 0 20px 0;
+      }
+    }
+    .seat-reservation {
+      padding-bottom: 20px;
+      h1 {
+        font-size: 30px !important;
+        width: 100% !important;
+        padding-left: 5% !important;
+        text-align: center !important;
+      }
+      .seat-reservation__box {
+        margin: 20px auto !important;
+      }
+    }
+    .footer-widgets {
+      .footer-widgets--row {
+        display: block !important;
+        .footer-widgets--col {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    .seat-reservation {
+      .seat-reservation__row {
+        display: flex !important;
+        flex-direction: column !important;
+        h1 {
+          padding-left: 5% !important;
+        }
+      }
+    }
+    .location {
+      .location__row {
+        display: block !important;
+      }
+    }
+    .chef {
+      .container-fluid {
+        .fa-chevron-left, .fa-chevron-right {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  body {
+    h1 {font-size: 28px!important; }
+    .h1-img {height: 30px !important; margin: 0 0 0 10px!important; }
+    /* Header */
+    header {
+      .navbar {
+        .navbar__div {
+          font-size: 25px !important;
+          .logo2-logo {
+            top: 3px !important;}
+        }
+        .navbar-toggler {
+          width: 75px !important;
+          .icon {
+            width: 50px !important;
+            height: 12px !important;
+            margin: 2px 10px !important;
+          }
+          .navbar__triangle {
+            margin-left: 35% !important;
+          }
+        }
+      }
+    }
+
+
+    /* Main */
+
+    .main {
+      .main__photo--thread{
+        top: 100% !important;
+      }
+      .main__sidebar-text {
+        h4 {
+          font-size: 10px !important;
+        }
+        h3 {
+          font-size: 18px !important;
+        }
+      }
+      .main__schedule {
+        width: 117px !important;
+        height: 63px !important;
+        top: 79% !important;
+        .main__top{
+          height: 14px !important;
+          .main__button-left {
+            width: 10px !important;
+            height: 14px !important;
+            right: 83% !important;
+          }
+          .main__button-right {
+            width: 10px !important;
+            height: 14px !important;
+            right: 9% !important;
+          }
+          .div1 {width: 12px!important;}
+          .div2 {width:  12px!important;}
+          .div3 {width: 93px!important;}
+        }
+      }
+      .main__bottom {
+        height: 67px !important;
+        h3 {font-size: 14px !important; margin: 0 !important; padding: 0 5px !important;}
+        div {font-size: 9px !important; margin: 0 !important; padding: 0 5px !important;}
+
+      }
+    }
+
+      /* Chef */
+
+    /* Reservation */
+
+    .reservation {
+      .content__h1 {
+        margin-left: 14% !important;
+      }
+      .reservation--container {
+       max-width: 280px !important;
+        .reservartion__row {
+
+          .row__col--left, .row__col--right {
+            padding: 10px 0 10px 0;
+            .form-control {
+              font-size: 14px !important;
+            }
+          }
+        }
+        #bottom {
+          margin-bottom: 60px;
+        }
+      }
+    }
+    .footer-widgets {
+      .footer-widgets--row__li {
+        padding: 0 !important;
+        .row-a {
+          margin: 5px 6px !important;
+          padding: 0 !important;
+          font-size: 14px!important;
+        }
+      }
+    }
+  }
+}
+
+
